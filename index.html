@@ -616,14 +616,16 @@ const WEDDING = {
       name:"Family Residence",
       desc:"Mehendi, Sangeet, Haldi, Dham &amp; Sehra Bandi",
       address:"H143, Ward 8, Nayanagar, Hamirpur, Himachal Pradesh 177001",
-      mapQuery:"H143, Ward 8, Nayanagar, Hamirpur, Himachal Pradesh 177001"
+      mapQuery:"H143, Ward 8, Nayanagar, Hamirpur, Himachal Pradesh 177001",
+      mapUrl:"https://maps.app.goo.gl/vMDqk2jp7i9nxJRB7"
     },
     {
       tag:"12 – 13 Nov · Baraat Onward",
       name:"The Grand Palace",
       desc:"Baraat Arrival, Jaimala &amp; Vadhu Pravesh",
       address:"Main Chowk, Naraina, Bhota, Hamirpur, Himachal Pradesh 176041",
-      mapQuery:"The Grand Palace, Main Chowk, Naraina, Bhota, Hamirpur, Himachal Pradesh 176041"
+      mapQuery:"The Grand Palace, Main Chowk, Naraina, Bhota, Hamirpur, Himachal Pradesh 176041",
+      mapUrl:"https://maps.app.goo.gl/uXoV4inbs4sHkkgu8"
     }
   ],
 
@@ -660,7 +662,7 @@ venuesEl.innerHTML = WEDDING.venues.map(v => `
     <h3>${v.name}</h3>
     <p class="vdesc">${v.desc}</p>
     <address>${v.address}</address>
-    <a class="btn pine" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(v.mapQuery)}">
+    <a class="btn pine" target="_blank" rel="noopener" href="${v.mapUrl ? v.mapUrl : 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(v.mapQuery)}">
       <svg class="icon"><use href="#ic-pin"/></svg>Get Directions
     </a>
   </div>
