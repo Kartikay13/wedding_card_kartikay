@@ -1,0 +1,15 @@
+Put your photos in this folder with these exact filenames:
+
+  engagement.jpg   -> Our Story section (left photo)
+  couple.jpg       -> Our Story section (right photo)
+  photo1.jpg        \
+  photo2.jpg         \
+  photo3.jpg          > Gallery grid (6 photos)
+  photo4.jpg         /
+  photo5.jpg        /
+  photo6.jpg       /
+  hero-share.jpg   -> optional, shown as the link preview thumbnail on WhatsApp/social
+
+Until a file is added, that spot shows a placeholder frame with its expected
+filename, so the page still looks finished. Delete this text file once you've
+added your photos (it won't be shown on the site either way).
